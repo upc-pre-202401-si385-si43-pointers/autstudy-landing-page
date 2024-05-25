@@ -16,20 +16,17 @@
     <nav class="flex justify-between items-center w-5/6 xl:w-4/6 mx-auto py-6">
         <section class="flex items-center bg-cover">
             <span class="material-symbols-outlined xl:hidden mr-2">menu</span>
-            <div class="min-w">
-                <img src="assets/images/logo.png" alt="logo">
-            </div>
+            <img src="assets/images/logo.png" alt="logo">
             <span class="hidden xl:flex navbar__logo">AutStudy</span>
         </section>
         <ul class="hidden xl:flex">
-            <li class="mr-8 text-nowrap">Acerca de</li>
-            <li class="mr-8 text-nowrap">Tipos de flashcards</li>
-            <li class="mr-8">Usuarios</li>
+            <li class="navbar__list mr-8 text-nowrap">Acerca de</li>
+            <li class="navbar__list mr-8 text-nowrap">Tipos de flashcards</li>
+            <li class="navbar__list mr-8">Usuarios</li>
         </ul>
         <input type="button" value="Open app" class="navbar__button">
     </nav>
-
-    <main class="flex flex-col xl:flex-row justify-between w-5/6 xl:w-2/3 mx-auto py-2 xl:py-16">
+    <main class="flex flex-col xl:flex-row justify-between w-5/6 xl:w-2/3 mx-auto py-2 xl:pt-20">
         <section class="flex flex-col w-full xl:w-4/6">
             <section>
                 <span class="hero__title--black">APRENDE</span>
@@ -48,48 +45,68 @@
                 </div>
             </section>
         </section>
-        <section class="w-full xl:w-2/6">
+        <section class="flex justify-center w-full xl:w-2/6 my-auto">
             <img src="assets/images/kid-1.png" alt="girl" class="hero__image">
         </section>
     </main>
-    <section>
-        <h2>Ganas de aprender + buenas flascards = aprendizaje perfecto</h2>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Flashcards generadas por IA especializada</span>
-            </div>
-            <ul>
-                <li>Plan de estudios sistemático para niños de 3 a 8 años</li>
-                <li>El contenido interactivo de IA fomenta y mantiene el interés de los niños por el aprendizaje</li>
-                <li>Clases inmersivas con experiencias de aprendizaje interactivas</li>
-            </ul>
-        </article>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Obtén una medalla por cada logro</span>
-            </div>
-            <ul>
-                <li>Obtén una medalla al crearte una cuenta</li>
-                <li>Obtén una medalla al completar tus datos</li>
-                <li>Obtén una medalla mensualmente por tu compromiso</li>
-            </ul>
-        </article>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Obtén nuevos conocimientos</span>
-            </div>
-            <ul>
-                <li>Aprende mediante nuestras flashcards generadas automáticamente</li>
-                <li>Proceso de aprendizaje progresivo, dependiendo del compromiso del usuario</li>
-            </ul>
-        </article>
+    <section class="w-5/6 xl:w-2/3 mx-auto py-2 xl:py-12">
+        <section class="flex flex-col items-center w-5/6 mx-auto">
+            <section class="flex flex-row flex-wrap justify-center">
+                <h2 class="title--blue mr-2">Ganas</h2>
+                <h2 class="title--black mr-2 text-nowrap">de aprender</h2>
+                <h2 class="title--blue mr-2">+</h2>
+                <h2 class="title--black mr-2 text-nowrap">buenas flascards = </h2>
+                <h2 class="title--blue mr-2">aprendizaje</h2>
+                <h2 class="title--black">perfecto</h2>
+            </section>
+        </section>
+        <section class="flex flex-col xl:flex-row justify-evenly mt-6">
+            <section class="features__first-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-1.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Flashcards generadas por IA especializada</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Plan de estudios sistemático para niños de 3 a 8 años</li>
+                    <li class="text-sm">El contenido interactivo de IA fomenta y mantiene el interés de los niños por el aprendizaje</li>
+                    <li class="text-sm">Clases inmersivas con experiencias de aprendizaje interactivas</li>
+                </ul>
+            </section>
+            <section class="features__second-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-2.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Obtén una medalla por cada logro</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Obtén una medalla al crearte una cuenta</li>
+                    <li class="text-sm">Obtén una medalla al completar tus datos</li>
+                    <li class="text-sm">Obtén una medalla mensualmente por tu compromiso</li>
+                </ul>
+            </section>
+            <section class="features__third-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-3.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Obtén nuevos conocimientos</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Aprende mediante nuestras flashcards generadas automáticamente</li>
+                    <li class="text-sm">Proceso de aprendizaje progresivo, dependiendo del compromiso del usuario</li>
+                </ul>
+            </section>
+            <section class="features__image">
+                <img src="assets/images/kid-2.png" alt="model" class="relative">
+            </section>
+        </section>
     </section>
     <section>
         <h2>Elige entre los 4 tipos diferentes de tematicas que te ofrecemos en nuestras flashcards</h2>
-        <article>
+        <section>
             <img src="" alt="kid">
             <section>
                 <div>
@@ -121,13 +138,13 @@
                     </div>
                 </div>
             </section>
-        </article>
+        </section>
     </section>
     <section>
         <img src="" alt="prize">
         <div>
             <h2>Nuestros resultados hablan por si solos</h2>
-            <article>
+            <section>
                 <section>
                     <span>Me encanta cómo hacen que aprender sea divertido y fácil. Las tarjetas son geniales y me ayudan a entender mejor mis lecciones.</span>
                     <div>
@@ -142,7 +159,7 @@
                         <span>-Jimmy</span>
                     </div>
                 </section>
-            </article>
+            </section>
         </div>
     </section>
     <footer>
