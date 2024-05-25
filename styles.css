@@ -1,0 +1,88 @@
+:root {
+    --font-family-fredoka: 'Fredoka One', cursive;
+    --font-family-nerko: 'Nerko One', cursive;
+    --color-black: #595959;
+    --color-blue: #789BDC;
+}
+
+* {
+    font-family: var(--font-family-fredoka);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.navbar__logo {
+    font-family: var(--font-family-nerko);
+    font-size: 2rem;
+    color: var(--color-black);
+}
+
+.navbar__button {
+    padding: 0.5em 2em;
+    color: var(--color-blue);
+    border: solid 2px var(--color-blue);
+    border-radius: 2em;
+}
+
+.hero__title--black {
+    font-family: var(--font-family-nerko);
+    font-size: 5.4rem;
+    font-weight: lighter;
+    color: var(--color-black);
+    line-height: 0.9;
+}
+
+.hero__title--blue {
+    font-family: var(--font-family-nerko);
+    font-size: 5.4rem;
+    font-weight: lighter;
+    color: var(--color-blue);
+    line-height: 0.9;
+}
+
+.hero__subtitle {
+    margin: 0.2em 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #737373;
+    line-height: 1.2;
+}
+
+.hero__button {
+    margin-top: 0.5em;
+    padding: 0.7em 2em;
+    color: white;
+    background-color: var(--color-blue);
+    border-radius: 2em;
+}
+
+.hero__image {
+    scale: 1.1;
+}
+
+@media (max-width: 800px) {
+    .navbar__button {
+        padding: 0.4em 1em;
+    }
+
+    .hero__title--black {
+        font-size: 2.2rem;
+    }
+    
+    .hero__title--blue {
+        font-size: 2.2rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero__button {
+        margin-top: 0.5em;
+        padding: 0.4em 1.5em;
+        color: white;
+        background-color: var(--color-blue);
+        border-radius: 2em;
+    }
+}
