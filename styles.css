@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+li {
+    color: var(--color-black);
+}
+
 .navbar__logo {
     font-family: var(--font-family-nerko);
     font-size: 2rem;
@@ -128,6 +132,10 @@
 
 .functionalities__card-image {
     max-width: 5em;
+}
+
+.black-text {
+    color: var(--color-black);
 }
 
 @media (max-width: 1200px) {
