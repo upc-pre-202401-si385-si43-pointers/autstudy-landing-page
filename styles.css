@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     color: var(--color-black);
 }
@@ -35,6 +39,13 @@ li {
     color: var(--color-blue);
     border: solid 2px var(--color-blue);
     border-radius: 2em;
+}
+
+.navbar__button:hover {
+    color: white;
+    background-color: var(--color-blue);
+    border: solid 2px var(--color-blue);
+    transition: 0.2s ease-out;
 }
 
 .hero__title--black {
@@ -67,6 +78,14 @@ li {
     color: white;
     background-color: var(--color-blue);
     border-radius: 2em;
+    border: solid 2px transparent;
+}
+
+.hero__button:hover {
+    color: var(--color-blue);
+    background-color: white;
+    border: solid 2px var(--color-blue);
+    transition: 0.2s ease-out;
 }
 
 .hero__image {
