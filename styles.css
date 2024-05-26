@@ -138,6 +138,24 @@ li {
     color: var(--color-black);
 }
 
+.comments__card {
+    background-image: url("../assets/images/testimonials.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2em 2em 0 0;
+}
+
+.comments__title {
+    font-family: var(--font-family-nerko);
+    font-weight: lighter;
+    font-size: 3.8rem;
+    line-height: 0.8;
+}
+
+.comments__testimonial {
+    width: 40%;
+}
+
 @media (max-width: 1200px) {
     .navbar__button {
         padding: 0.4em 1em;
@@ -197,5 +215,13 @@ li {
 
     .functionalities__card-image {
         max-width: 3em;
+    }
+
+    .comments__title {
+        font-size: 2rem;
+    }
+
+    .comments__testimonial {
+        width: 80%;
     }
 }
