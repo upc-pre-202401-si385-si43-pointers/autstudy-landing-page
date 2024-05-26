@@ -3,162 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutStudy</title>
+    <title>AutStudy | Home - Landing page</title>
+    <link rel="shortcut icon" href="/assets/images/logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav>
-        <span>AutStudy</span>
-        <ul>
-            <li>Acerca de</li>
-            <li>Tipos de flashcards</li>
-            <li>Usuarios</li>
+    <nav class="flex justify-between items-center w-5/6 xl:w-4/6 mx-auto py-6">
+        <section class="flex items-center bg-cover">
+            <span class="material-symbols-outlined lg:hidden mr-2">menu</span>
+            <img src="assets/images/logo.png" alt="logo">
+            <span class="hidden xl:flex navbar__logo">AutStudy</span>
+        </section>
+        <ul class="hidden xl:flex">
+            <li class="navbar__list mr-8 text-nowrap">Acerca de</li>
+            <li class="navbar__list mr-8 text-nowrap">Tipos de flashcards</li>
+            <li class="navbar__list mr-8">Usuarios</li>
         </ul>
-        <input type="button" value="Open app">
+        <input type="button" value="Open app" class="navbar__button">
     </nav>
-    <main>
-        <section>
-            <span>APRENDE AHORA MISMO</span>
-            <span>DE LA FORMA MÁS</span>
-            <span>DIVERTIDA POSIBLEEEE</span>
-            <span>Aprende mediante divertidas flashcards con dibujos animados</span>
-            <input type="button" value="Ver más">
+    <main class="flex flex-col xl:flex-row justify-between w-5/6 xl:w-2/3 mx-auto py-2 xl:pt-20">
+        <section class="flex flex-col w-full xl:w-4/6">
+            <section>
+                <span class="hero__title--black">APRENDE</span>
+                <span class="hero__title--blue">AHORA</span>
+                <span class="hero__title--black">MISMO</span>
+                <span class="hero__title--black">DE LA</span>
+                <span class="hero__title--blue">FORMA</span>
+                <span class="hero__title--black">MÁS</span>
+                <span class="hero__title--blue">DIVERTIDA</span>
+                <span class="hero__title--black">POSIBLEEEE</span>
+            </section>
+            <section class="flex flex-col w-full xl:w-3/4">
+                <span class="hero__subtitle">Aprende mediante divertidas flashcards con dibujos animados</span>
+                <div class="mb-4 xl:mb-0">
+                    <input type="button" value="Ver más" class="hero__button">
+                </div>
+            </section>
         </section>
-        <img src="" alt="girl">
+        <section class="flex justify-center w-full xl:w-2/6 my-auto">
+            <img src="assets/images/kid-1.png" alt="girl" class="hero__image">
+        </section>
     </main>
-    <section>
-        <h2>Ganas de aprender + buenas flascards = aprendizaje perfecto</h2>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Flashcards generadas por IA especializada</span>
-            </div>
-            <ul>
-                <li>Plan de estudios sistemático para niños de 3 a 8 años</li>
-                <li>El contenido interactivo de IA fomenta y mantiene el interés de los niños por el aprendizaje</li>
-                <li>Clases inmersivas con experiencias de aprendizaje interactivas</li>
-            </ul>
-        </article>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Obtén una medalla por cada logro</span>
-            </div>
-            <ul>
-                <li>Obtén una medalla al crearte una cuenta</li>
-                <li>Obtén una medalla al completar tus datos</li>
-                <li>Obtén una medalla mensualmente por tu compromiso</li>
-            </ul>
-        </article>
-        <article>
-            <div>
-                <img src="" alt="icon">
-                <span>Obtén nuevos conocimientos</span>
-            </div>
-            <ul>
-                <li>Aprende mediante nuestras flashcards generadas automáticamente</li>
-                <li>Proceso de aprendizaje progresivo, dependiendo del compromiso del usuario</li>
-            </ul>
-        </article>
-    </section>
-    <section>
-        <h2>Elige entre los 4 tipos diferentes de tematicas que te ofrecemos en nuestras flashcards</h2>
-        <article>
-            <img src="" alt="kid">
-            <section>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>Problemas matématicos</span>
-                        <span>Aprende a resolver las principales operaciones matemáticas como: sumar, restar, dividir y multiplicar.</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>Geometría</span>
-                        <span>Aprende a reconocer y resolver problemas de geometría un poco más avanzados.</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>Lógica matemática</span>
-                        <span>Usa y mejora tus habilidades lógicas mediante divertidos puzzles.</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>Resolución de problemas</span>
-                        <span>Razona e intuye soluciones de manera rápida con problemas con un toque diferente al resto.</span>
-                    </div>
-                </div>
+    <section class="w-5/6 xl:w-2/3 mx-auto py-2 xl:py-12">
+        <section class="flex flex-col items-center w-5/6 mx-auto">
+            <section class="flex flex-row flex-wrap justify-center">
+                <h2 class="title--blue mr-2">Ganas</h2>
+                <h2 class="title--black mr-2 text-nowrap">de aprender</h2>
+                <h2 class="title--blue mr-2">+</h2>
+                <h2 class="title--black mr-2 text-nowrap">buenas flascards = </h2>
+                <h2 class="title--blue mr-2">aprendizaje</h2>
+                <h2 class="title--black">perfecto</h2>
             </section>
-        </article>
-    </section>
-    <section>
-        <img src="" alt="prize">
-        <div>
-            <h2>Nuestros resultados hablan por si solos</h2>
-            <article>
-                <section>
-                    <span>Me encanta cómo hacen que aprender sea divertido y fácil. Las tarjetas son geniales y me ayudan a entender mejor mis lecciones.</span>
-                    <div>
-                        <img src="" alt="girl">
-                        <span>-Lisa</span>
-                    </div>
-                </section>
-                <section>
-                    <span>Las flashcards hacen que las lecciones sean más fáciles de entender y recordar. Me gusta que la plataforma se adapte a mis necesidades.</span>
-                    <div>
-                        <img src="" alt="boy">
-                        <span>-Jimmy</span>
-                    </div>
-                </section>
-            </article>
-        </div>
-    </section>
-    <footer>
-        <section>
-            <section>
-                <span>AutStudy</span>
-                <p>APRENDE AHORA MISMO DE LA FORMA MÁS DIVERTIDA POSIBLEEEE! Aprende mediante divertidas flashcards con dibujos animados</p>
-                <div>
-                    <img src="" alt="play-store">
-                    <img src="" alt="app-store">
-                </div>
-            </section>
-            <ul>
-                <li>Links rápidos</li>
-                <li>Home</li>
-                <li>Acerca de</li>
-                <li>Tipo de flashcards</li>
-                <li>Usuarios</li>
-            </ul>
-            <ul>
-                <li>Conecta con nosotros</li>
-                <li>
-                    <img src="" alt="facebook">Facebook
-                </li>
-                <li>
-                    <img src="" alt="instagram">Instagram
-                </li>
-                <li>
-                    <img src="twitter" alt="">Twitter
-                </li>
-                <li>
-                    <img src="" alt="tiktok">Tiktok
-                </li>
-            </ul>
         </section>
-        <section>
-            <ul>
-                <li>Politicas de privacidad</li>
-                <li>Térmninos y condiciones</li>
+        <section class="flex flex-col xl:flex-row justify-evenly mt-6">
+            <section class="features__first-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-1.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Flashcards generadas por IA especializada</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Plan de estudios sistemático para niños de 3 a 8 años</li>
+                    <li class="text-sm">El contenido interactivo de IA fomenta y mantiene el interés de los niños por el aprendizaje</li>
+                    <li class="text-sm">Clases inmersivas con experiencias de aprendizaje interactivas</li>
+                </ul>
+            </section>
+            <section class="features__second-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-2.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Obtén una medalla por cada logro</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Obtén una medalla al crearte una cuenta</li>
+                    <li class="text-sm">Obtén una medalla al completar tus datos</li>
+                    <li class="text-sm">Obtén una medalla mensualmente por tu compromiso</li>
+                </ul>
+            </section>
+            <section class="features__third-card mb-4 xl:mb-0">
+                <section class="flex items-center mb-2">
+                    <section>
+                        <img src="assets/images/card-3.png" alt="icon" class="features__card-image">
+                    </section>
+                    <span class="text-black">Obtén nuevos conocimientos</span>
+                </section>
+                <ul class="list-disc list-inside">
+                    <li class="text-sm">Aprende mediante nuestras flashcards generadas automáticamente</li>
+                    <li class="text-sm">Proceso de aprendizaje progresivo, dependiendo del compromiso del usuario</li>
+                </ul>
+            </section>
+            <section class="features__image">
+                <img src="assets/images/kid-2.png" alt="model" class="relative">
+            </section>
+        </section>
+    </section>
+    <section class="w-5/6 xl:w-2/3 mx-auto py-2 xl:py-4">
+        <section class="flex flex-col items-center mx-auto">
+            <section class="flex flex-row flex-wrap justify-center">
+                <h2 class="title--black mr-2 text-nowrap">Elige entre los</h2>
+                <h2 class="title--blue mr-2 text-nowrap">4 tipos diferentes</h2>
+                <h2 class="title--black mr-2 text-nowrap">de tematicas que te</h2>
+                <h2 class="title--blue mr-2 text-nowrap">ofrecemos</h2>
+                <h2 class="title--black mr-2 text-nowrap">en nuestras</h2>
+                <h2 class="title--blue mr-2 text-nowrap">flashcards</h2>
+            </section>
+        </section>
+        <section class="functionalities__card flex mt-6 px-8 lg:px-16 py-8">
+            <section class="functionalities__model-image my-auto">
+                <img src="assets/images/kid-3.png" alt="kid" class="hidden xl:flex p-8">
+            </section>
+            <section class="flex flex-col justify-evenly">
+                <section class="flex mb-2">
+                    <section>
+                        <img src="assets/images/math-problems.png" alt="math" class="functionalities__card-image mr-4">
+                    </section>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl">Problemas matématicos</span>
+                        <span class="text-sm">Aprende a resolver las principales operaciones matemáticas como: sumar, restar, dividir y multiplicar.</span>
+                    </div>
+                </section>
+                <section class="flex mb-2">
+                    <section>
+                        <img src="assets/images/geometry.png" alt="geometry" class="functionalities__card-image mr-4">
+                    </section>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl">Geometría</span>
+                        <span class="text-sm">Aprende a reconocer y resolver problemas de geometría un poco más avanzados.</span>
+                    </div>
+                </section>
+                <section class="flex mb-2">
+                    <section>
+                        <img src="assets/images/logic-math.png" alt="logic" class="functionalities__card-image mr-4">
+                    </section>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl">Lógica matemática</span>
+                        <span class="text-sm">Usa y mejora tus habilidades lógicas mediante divertidos puzzles.</span>
+                    </div>
+                </section>
+                <section class="flex">
+                    <section>
+                        <img src="assets/images/problems-resolution.png" alt="problems" class="functionalities__card-image mr-4">
+                    </section>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl">Resolución de problemas</span>
+                        <span class="text-sm">Razona e intuye soluciones de manera rápida con problemas con un toque diferente al resto.</span>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="comments__card w-5/6 xl:w-2/3 mx-auto my-0 mb-8 xl:my-16 pt-20 xl:py-2 xl:py-4">
+        <h2 class="comments__title xl:w-1/2 mx-auto xl:my-8 pt-16 xl:pt-24 text-center">Nuestros resultados hablan por sisolos</h2>
+        <section class="flex flex-col xl:flex-row justify-evenly items-center py-4">
+            <img src="assets/images/card-testimonial-1.png" alt="testimonial-1" class="comments__testimonial mb-4 xl:mb-0">
+            <img src="assets/images/card-testimonial-2.png" alt="testimonial-2" class="comments__testimonial">
+        </section>
+    </section>
+    <footer class="w-5/6 xl:w-2/3 mx-auto py-2 xl:py-4">
+        <section class="flex flex-col xl:flex-row justify-between items-center mb-12">
+            <section class="flex xl:items-center">
+                <figure>
+                    <img src="assets/images/logo.png" alt="logo">
+                </figure>
+                <span class="hidden xl:flex navbar__logo">AutStudy</span>
+            </section>
+            <section class="flex flex-col items-center xl:items-start my-2 lg:my-0">
+                <span>Links rápidos</span>
+                <div class="flex">
+                    <img src="assets/images/play-store.png" alt="play-store">
+                    <img src="assets/images/app-store.png" alt="app-store">
+                </div>
+            </section>
+            <section class="flex flex-col items-center xl:items-start  my-2 lg:my-0">
+                <span class="black-text">Conecta con nosotros</span>
+                <ul class="flex">
+                    <li class="flex items-center mr-4">
+                        <figure class="mr-1">
+                            <img src="assets/images/facebook.png" alt="facebook">
+                        </figure>
+                        <span class="hidden 2xl:flex">Facebook</span>
+                    </li>
+                    <li class="flex items-center mr-4"">
+                        <figure class="mr-1">
+                            <img src="assets/images/instagram.png" alt="instagram">
+                        </figure>
+                        <span class="hidden 2xl:flex">Instagram</span>
+                    </li>
+                    <li class="flex items-center mr-4"">
+                        <figure class="mr-1">
+                            <img src="assets/images/twitter.png" alt="twitter">
+                        </figure>
+                        <span class="hidden 2xl:flex">twitter</span>
+                    </li>
+                    <li class="flex items-center mr-4"">
+                        <figure class="mr-1">
+                            <img src="assets/images/tiktok.png" alt="tiktok">
+                        </figure>
+                        <span class="hidden 2xl:flex">Tiktok</span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul class="flex flex-col items-center xl:items-end">
+                    <li>Home</li>
+                    <li>Acerca de</li>
+                    <li>Tipos de flashcards</li>
+                    <li>Usuarios</li>
+                </ul>
+            </section>
+        </section>
+        <section class="flex flex-col xl:flex-row items-center xl:justify-between my-8">
+            <ul class="hidden sm:flex flex-col items-center xl:flex-row">
+                <li class="text-nowrap mr-0 xl:mr-8">Politicas de privacidad</li>
+                <li class="text-nowrap mr-0 xl:mr-8">Térmninos y condiciones</li>
                 <li>Soporte</li>
             </ul>
-            <span>©AutStudy Copyright 2024, All Rights Reserved</span>
+            <span class="text-center black-text">©AutStudy Copyright 2024, All Rights Reserved</span>
         </section>
     </footer>
 </body>
